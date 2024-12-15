@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './components/HomePage';
+import DetailsPage from './components/DetailsPage'; // Import the DetailsPage
+import PropertyAdd from './admin/PropertyAdd';
+import Register from './mainPage/Regiter';
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        {/* Home Page */}
+        <Route path="/" element={<HomePage />} />
+
+        {/* Admin Page to Add Property */}
+        <Route path="/PropertyAdd" element={<PropertyAdd />} />
+        <Route path="/Register" element={<Register />} />
+        
+
+        {/* Details Page */}
+        <Route path="/details/:id" element={<DetailsPage />} /> {/* Updated to DetailsPage */}
+        
+      </Routes>
+    </Router>
   );
 }
-
-export default App;
