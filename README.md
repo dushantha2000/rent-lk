@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Rent.lk - Online Rental Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Rent.lk is a user-friendly and reliable online rental platform for Sri Lanka. It allows users to easily search for verified rental properties, compare prices, read reviews, and find the best rental options based on their preferences. This project aims to transform the rental market by offering a seamless, transparent, and secure way to rent properties.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Verified Listings**: All rental listings are verified for accuracy and authenticity.
+- **Price Comparison**: Compare rental prices across different properties.
+- **Reviews & Ratings**: Users can view reviews and ratings of properties.
+- **Comprehensive Property Info**: Detailed property descriptions, images, and amenities.
+- **Search & Filter**: Search properties based on location, price, and other preferences.
+- **Chatbot Integration**: Use the integrated chatbot for instant assistance and property recommendations.
+- **Machine Learning Recommendations**: The platform provides property suggestions based on user preferences and behavior.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React, HTML, CSS, JavaScript
+- **Backend**: Laravel (PHP)
+- **Database**: MySQL, MongoDB
+- **Cloud Storage**: For storing images and documents
+- **Chatbot**: Integrated chatbot for user assistance
+- **Machine Learning**: Recommender system to suggest properties
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (for React)
+- Composer (for Laravel)
+- MySQL or MongoDB (for database setup)
 
-### `npm run build`
+### Steps to Set Up
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ```bash
+   git clone https://github.com/dushantha2000/rent-lk.git
+   cd rent-lk
