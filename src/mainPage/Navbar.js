@@ -19,7 +19,10 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
           <a href="#" className="hover:text-blue-300 transition-colors">Pricing</a>
 
           <button className="bg-white text-blue-600 px-6 py-2 rounded-full hover:bg-blue-50 transition-colors">
-            Register
+          <a href='/Register'>Register</a>
+          </button>
+          <button className="bg-white text-blue-600 px-6 py-2 rounded-full hover:bg-blue-50 transition-colors">
+           <a href='/Login'>Login</a> 
           </button>
         </div>
         

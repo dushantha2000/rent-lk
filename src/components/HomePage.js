@@ -6,6 +6,8 @@ import PropertyCard from '../mainPage/PropertyCard';
 import Footer from '../mainPage/Footer';
 import ChatBox from '../mainPage/ChatBox';
 import Testimonials from '../mainPage/Testimonials';
+import AboutUs from '../mainPage/AboutUs';
+
 
 
 
@@ -309,6 +311,7 @@ const HomePage = () => {
       </main>
       
       <Testimonials/>
+      <AboutUs/>
       <ChatBox />
       <Footer />
     </div>
