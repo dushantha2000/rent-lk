@@ -27,7 +27,7 @@ const AboutUsPage = () => {
           </div>
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <img 
-              src="/api/placeholder/600/400" 
+              src="/images/2.jpg" 
               alt="Rental Platform" 
               className="w-full h-full object-cover"
             />
