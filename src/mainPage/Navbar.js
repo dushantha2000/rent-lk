@@ -1,7 +1,7 @@
 import React from 'react';
 import { Key, Menu, X } from 'lucide-react';
 
-const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
+const Navbar = ({ isMenuOpen, setIsMenuOpen, isLoggedIn }) => {
   return (
     <nav className="relative z-10 px-6 py-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
@@ -18,12 +18,20 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
           <a href="/AboutUs" className="hover:text-blue-300 transition-colors">About Us</a>
           <a href="#" className="hover:text-blue-300 transition-colors">Pricing</a>
 
-          <button className="bg-white text-blue-600 px-6 py-2 rounded-full hover:bg-blue-50 transition-colors">
-          <a href='/Register'>Register</a>
-          </button>
-          <button className="bg-white text-blue-600 px-6 py-2 rounded-full hover:bg-blue-50 transition-colors">
-           <a href='/Login'>Login</a> 
-          </button>
+          {isLoggedIn ? (
+            <button className="bg-white text-blue-600 px-6 py-2 rounded-full hover:bg-blue-50 transition-colors">
+              <a href="/Account">User Account</a>
+            </button>
+          ) : (
+            <>
+              <button className="bg-white text-blue-600 px-6 py-2 rounded-full hover:bg-blue-50 transition-colors">
+                <a href="/Register">Register</a>
+              </button>
+              <button className="bg-white text-blue-600 px-6 py-2 rounded-full hover:bg-blue-50 transition-colors">
+                <a href="/Login">Login</a>
+              </button>
+            </>
+          )}
         </div>
         
         {/* Mobile Menu Button */}
@@ -43,9 +51,15 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
             <a href="#" className="text-white hover:text-blue-300 transition-colors">Home</a>
             <a href="#" className="text-white hover:text-blue-300 transition-colors">Rentals</a>
             <a href="#" className="text-white hover:text-blue-300 transition-colors">List Property</a>
-            <button className="bg-white text-blue-600 px-6 py-2 rounded-full hover:bg-blue-50 transition-colors w-full">
-              Post a Rental
-            </button>
+            {isLoggedIn ? (
+              <button className="bg-white text-blue-600 px-6 py-2 rounded-full hover:bg-blue-50 transition-colors w-full">
+                <a href="/Account">User Account</a>
+              </button>
+            ) : (
+              <button className="bg-white text-blue-600 px-6 py-2 rounded-full hover:bg-blue-50 transition-colors w-full">
+                <a href="/Login">Login</a>
+              </button>
+            )}
           </div>
         </div>
       )}

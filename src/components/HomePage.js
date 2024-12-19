@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Navbar from '../mainPage/Navbar';
 import HeroSection from '../mainPage/HeroSection';
 import CategoryFilter from '../mainPage/CategoryFilter';
 import PropertyCard from '../mainPage/PropertyCard';
@@ -7,6 +6,7 @@ import Footer from '../mainPage/Footer';
 import ChatBox from '../mainPage/ChatBox';
 import Testimonials from '../mainPage/Testimonials';
 import AboutUs from '../mainPage/AboutUs';
+import StatsBar from '../mainPage/StatsBar';
 
 
 
@@ -233,7 +233,6 @@ export const rentals = [
   },
   // More rental properties can be added here...
 ];
-
 const HomePage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState('all');
@@ -309,7 +308,9 @@ const HomePage = () => {
           </div>
         )}
       </main>
-      
+      {/*Status Bar */}
+      <StatsBar />
+
       <Testimonials/>
       <AboutUs/>
       <ChatBox />

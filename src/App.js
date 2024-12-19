@@ -1,15 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
-import DetailsPage from './components/DetailsPage'; // Import the DetailsPage
+import DetailsPage from './components/DetailsPage';
 import PropertyAdd from './admin/PropertyAdd';
 import Login from './RegisterLogin/Login';
 import Register from './RegisterLogin/Register';
 import ForgotPassword from './RegisterLogin/ForgotPassword';
-import AboutUs from './mainPage/AboutUs'
-
+import AboutUsPage from './AboutUsPage/AboutUsPage';
 
 export default function App() {
+
   return (
     <Router>
       <Routes>
@@ -21,10 +21,12 @@ export default function App() {
         <Route path="/Register" element={<Register />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/ForgotPassword" element={<ForgotPassword />} />
-        <Route path="/AboutUs" element={<AboutUs />} />
+
+        {/* About Us Page */}
+        <Route path="/AboutUs" element={<AboutUsPage />} />
+
         {/* Details Page */}
-        <Route path="/details/:id" element={<DetailsPage />} /> {/* Updated to DetailsPage */}
-        
+        <Route path="/details/:id" element={<DetailsPage />} />
       </Routes>
     </Router>
   );

@@ -6,10 +6,9 @@ import Footer from '../mainPage/Footer';
 import SearchBar from '../mainPage/SearchBar';
 import ChatBox from '../mainPage/ChatBox';
 import Testimonials from '../mainPage/Testimonials';
-
-
 // Assuming `rentals` is imported or available globally
 import { rentals } from '../components/HomePage';
+
 
 export default function DetailsPage() {
   const { id } = useParams(); // Get the ID from the URL
@@ -34,7 +33,7 @@ export default function DetailsPage() {
 
       {/* Details Section */}
       {rental ? <Details rental={rental} /> : <p>Loading...</p>} {/* Render Details if rental is found */}
-
+      
       {/*Testimonials */}
       <Testimonials />
 

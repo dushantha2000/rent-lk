@@ -59,7 +59,7 @@ const PropertyTourBooking = ({ onBookTour, agent }) => {
     switch(step) {
       case 1:
         return (
-          <div className="space-y-5">
+          <div className="space-y-7">
             <div>
               <label className="block mb-2 text-gray-700 font-semibold">
                 Your Full Name
@@ -382,7 +382,7 @@ const UltimatePropertyDetails = ({ rental }) => {
         </div>
 
         {/* Book Tour Button */}
-        <div className="mt-6 flex justify-center">
+        <div className="mt-6 flex justify-evenly">
           <button 
             onClick={() => setShowTourBooking(true)}
             className="flex items-center space-x-2 bg-blue-500 text-white px-10 py-3 rounded-full hover:bg-blue-600 transition-colors text-lg"
