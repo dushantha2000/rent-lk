@@ -27,7 +27,7 @@ Rent.lk is a user-friendly and reliable online rental platform for Sri Lanka. It
 
 - Node.js (for React)
 - Composer (for Laravel)
-- MySQL or MongoDB (for database setup)
+- MySQL  (for database setup)
 
 ### Steps to Set Up
 
