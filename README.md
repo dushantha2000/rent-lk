@@ -10,24 +10,19 @@ Rent.lk is a user-friendly and reliable online rental platform for Sri Lanka. It
 - **Comprehensive Property Info**: Detailed property descriptions, images, and amenities.
 - **Search & Filter**: Search properties based on location, price, and other preferences.
 - **Chatbot Integration**: Use the integrated chatbot for instant assistance and property recommendations.
-- **Machine Learning Recommendations**: The platform provides property suggestions based on user preferences and behavior.
+
 
 ## Tech Stack
 
 - **Frontend**: React, HTML, CSS, JavaScript
-- **Backend**: Laravel (PHP)
-- **Database**: MySQL, MongoDB
-- **Cloud Storage**: For storing images and documents
-- **Chatbot**: Integrated chatbot for user assistance
-- **Machine Learning**: Recommender system to suggest properties
+
 
 ## Installation
 
 ### Prerequisites
 
 - Node.js (for React)
-- Composer (for Laravel)
-- MySQL  (for database setup)
+
 
 ### Steps to Set Up
 
